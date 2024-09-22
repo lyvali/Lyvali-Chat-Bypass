@@ -1,2 +1,3 @@
 # Lyvali-Chat-Bypasser
-🎀 Made by Lyvali
+🎀 Made by Lyvali\
+🌐 Open sourced.
