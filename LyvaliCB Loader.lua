@@ -9,14 +9,12 @@ end
 
 pcall(function() bypassLoad = true end)
 
-if not game:IsLoaded() then game.Loaded:Wait() end
-
 local ChatService = game:GetService("TextChatService")
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local isNew = false
 
-local ChatMessage = "[🎀] This chat "..string.reverse("ssapyb").." was made by Lyvali"
+--local ChatMessage = "[🎀] This chat "..string.reverse("ssapyb").." was made by Lyvali"
 
 local function checkChatVersion()
 	local new = Enum.ChatVersion.TextChatService
@@ -66,11 +64,11 @@ local function dragGUI(gui)
 	end)
 end
 
-if checkChatVersion() == (isNew == true) then
-	ChatService.TextChannels.RBXGeneral:SendAsync(ChatMessage)
-elseif checkChatVersion() == (isNew == false) then
-	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage, "All")
-end
+--if checkChatVersion() == (isNew == true) then
+--	ChatService.TextChannels.RBXGeneral:SendAsync(ChatMessage)
+--elseif checkChatVersion() == (isNew == false) then
+--	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage, "All")
+--end
 
 local LyvaliUI = Instance.new("ScreenGui")
 local ChatBypasser = Instance.new("Frame")
